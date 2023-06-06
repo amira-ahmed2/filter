@@ -1,0 +1,37 @@
+<div class="container py-5 table-responsive">
+
+    <table class="table table-bordered align-middle bg-white">
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Employment Date</th>
+          <th scope="col">Salary</th>
+          <th scope="col">Experience</th>
+          <th scope="col">Department</th>
+  
+        </tr>
+      </thead>
+
+      <tbody>
+        <ng-container *ngIf="employees.length!=0;else notResult ">
+
+        <tr *ngFor="let employee of employees ;  trackBy: trackByFn" >
+          <td class="text-capitalize"> {{ employee.name }}</td>
+          <td> {{ employee.employment_date|date: 'd/M/yyyy'}}</td>
+          <td> {{ employee.salary }}</td>
+          <td>{{ employee.experience }}</td>
+          <td class="text-capitalize"> {{ employee.department }}</td>
+        </tr>
+        
+        </ng-container>
+        <ng-template #notResult>
+          <tr>
+            <td colspan="5" class="text-center fs-5"> Not Result</td>
+          </tr>
+      </ng-template>
+      </tbody>
+    </table>
+  </div>
+
+  
+   

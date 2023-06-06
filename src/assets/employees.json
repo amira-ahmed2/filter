@@ -1,0 +1,37 @@
+{
+    "employees": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "employment_date": "2020-12-01",
+        "department": "Finance",
+        "salary": 2000,
+        "experience": ""
+      },
+      {
+        "id": 2,
+        "name": "George",
+        "employment_date": "2018-10-05",
+        "department": "IT",
+        "salary": 5000,
+        "experience": ""
+      },
+      {
+        "id": 3,
+        "name": "Peter",
+        "employment_date": "2021-02-15",
+        "department": "Finance",
+        "salary": 2000,
+        "experience": ""
+      }
+      ,
+      {
+        "id": 3,
+        "name": "alin",
+        "employment_date": "2022-01-01",
+        "department": "IT",
+        "salary": 4000,
+        "experience":"Less than a year"
+      }
+    ]
+  }
